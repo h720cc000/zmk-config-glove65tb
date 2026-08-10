@@ -76,25 +76,14 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC         &kp N1        &kp N2  &kp N3        &kp N4     &kp N5                                      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
-&kp TAB         &kp Q         &kp L   &kp U         &kp COMMA  &kp DOT        &trans     &trans            &kp F   &kp W   &kp R   &kp Y   &kp P   &kp BACKSLASH
-&mo 2           &kp E         &kp I   &kp A         &kp O      &kp MINUS      &trans     &trans            &kp K   &kp T   &kp N   &kp S   &kp H   &kp RETURN
-&kp LEFT_SHIFT  &kp Z         &kp X   &kp C         &kp V      &kp SEMICOLON  &mo 5      &kp SINGLE_QUOTE  &kp G   &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &trans  &kp LEFT_ALT  &kp SPACE  &mkp LCLK      &kp SPACE  &kp BACKSPACE     &mo 3                           &trans  &trans
+&kp ESC         &kp N1        &kp N2        &kp N3     &kp N4     &kp N5                                     &kp N6       &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
+&kp TAB         &kp Q         &kp L         &kp U      &kp COMMA  &kp DOT        &trans       &trans         &kp F        &kp W   &kp R   &kp Y   &kp P   &trans
+&mo 1           &kp E         &kp I         &kp A      &kp O      &kp MINUS      &kp INT_RO   &trans         &kp K        &kp T   &kp N   &kp S   &kp H   &kp RETURN
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V      &kp SEMICOLON  &lt 5 COLON  &trans         &kp G        &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &mkp LCLK      &kp SPACE    &kp BACKSPACE  &lt 2 LANG4                          &trans  &kp DELETE
             >;
 
-            sensor-bindings = <&mouse_wheel_scroll SCRL_UP SCRL_DOWN>;
-        };
-
-        number_layer {
-            label = "NUM";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
-            >;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         symbol_layer {
@@ -111,14 +100,25 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                   &kp F6   &kp F7          &kp F8          &kp F9           &kp F10           &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans     &kp F11  &kp F12         &kp UP_ARROW    &trans           &kp MINUS         &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans     &kp C_VOLUME_UP    &trans     &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans     &kp C_VOLUME_DOWN  &kp GRAVE  &trans   &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans             &trans     &trans                                                    &trans            &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                             &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP    &trans  &trans   &trans   &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans   &trans   &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans                            &trans   &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
+
+        number_layer {
+            label = "NUM";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+            >;
         };
 
         mouse_layer {
