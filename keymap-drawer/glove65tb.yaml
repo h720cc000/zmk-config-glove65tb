@@ -24,10 +24,10 @@ layers:
   - F
   - W
   - R
-  - O
+  - Y
   - P
   - \
-  - LEFT CONTROL
+  - SYM
   - E
   - I
   - A
@@ -38,7 +38,7 @@ layers:
   - K
   - T
   - N
-  - L
+  - S
   - H
   - RETURN
   - LEFT SHIFT
@@ -55,14 +55,14 @@ layers:
   - J
   - B
   - RIGHT SHIFT
-  - SYM
-  - {t: ▽, type: trans}
-  - LEFT CONTROL
-  - LEFT ALT
+  - LCTRL
   - LEFT GUI
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - SPACE
   - '&mkp LCLK'
   - SPACE
-  - SPACE
+  - BACKSPACE
   - FUN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -187,7 +187,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -249,8 +249,8 @@ layers:
   - '`'
   - {t: ▽, type: trans}
   - '&mkp LCLK'
-  - '&mkp RCLK'
   - '&mkp MCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,6 +300,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,12 +314,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB4'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
