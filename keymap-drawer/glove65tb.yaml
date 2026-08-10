@@ -16,44 +16,44 @@ layers:
   - TAB
   - Q
   - L
-  - E
-  - R
-  - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Y
   - U
-  - I
+  - ','
+  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F
+  - W
+  - R
   - O
   - P
   - \
   - LEFT CONTROL
+  - E
+  - I
   - A
-  - S
-  - D
-  - F
-  - G
+  - O
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - H
-  - J
   - K
+  - T
+  - N
   - L
-  - ;
+  - H
   - RETURN
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
-  - B
+  - ;
   - SCROLL
   - ''''
-  - N
+  - G
+  - D
   - M
-  - ','
-  - .
-  - /
+  - J
+  - B
   - RIGHT SHIFT
   - SYM
   - {t: ▽, type: trans}
