@@ -59,7 +59,7 @@ layers:
   - LEFT GUI
   - LEFT ALT
   - {t: INT MUHENKAN, h: LCTRL}
-  - SPACE
+  - {t: SPACE, h: NUM}
   - {t: SPACE, h: NUM}
   - SPACE
   - BACKSPACE
@@ -389,7 +389,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SPACE
   - ''
   - ''
   - ''
