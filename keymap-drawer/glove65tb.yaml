@@ -47,7 +47,7 @@ layers:
   - C
   - V
   - ;
-  - {t: '''', h: SCROLL}
+  - ''''
   - {t: ▽, type: trans}
   - G
   - D
@@ -59,9 +59,9 @@ layers:
   - LEFT GUI
   - LEFT ALT
   - {t: INT MUHENKAN, h: LCTRL}
-  - {t: SPACE, h: NUM}
-  - {t: SPACE, h: NUM}
   - SPACE
+  - {t: SPACE, h: NUM}
+  - RETURN
   - BACKSPACE
   - {t: INT HENKAN, h: FUN}
   - SYM
@@ -237,7 +237,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
-  - SCROLL
+  - {t: SCROLL, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -245,7 +245,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
@@ -369,7 +369,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - RETURN
+  - ''
   - ''
   - ''
   - ''
@@ -383,16 +383,16 @@ layers:
   - KP 1
   - KP 2
   - KP 3
+  - .
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - SPACE
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
+  - BACKSPACE
   - RETURN
   - ''
   - ''
