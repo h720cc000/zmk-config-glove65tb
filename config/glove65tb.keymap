@@ -77,7 +77,7 @@
             label = "DEFAULT";
             bindings = <
 &kp ESC         &kp N1        &kp N2        &kp N3                  &kp N4       &kp N5                                            &kp N6            &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA    &kp DOT        &trans              &trans         &kp F             &kp W   &kp R   &kp Y   &kp P   &mo 3
+&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA    &kp DOT        &trans              &trans         &kp F             &kp W   &kp R   &kp Y   &kp P   &trans
 &mo 5           &kp E         &kp I         &kp A                   &kp O        &kp MINUS      &kp SLASH           &trans         &kp K             &kp T   &kp N   &kp S   &kp H   &kp RETURN
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &trans         &kp G             &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 5 SPACE  &lt 5 SPACE    &kp SPACE           &kp BACKSPACE  &lt 4 INT_HENKAN                          &mo 1   &kp DELETE
@@ -101,8 +101,8 @@
             label = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &mo 3
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &mo 3   &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
@@ -113,7 +113,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
@@ -146,7 +146,7 @@
         qwerty {
             bindings = <
 &trans  &trans  &trans  &trans            &trans  &trans                     &trans  &trans  &trans     &trans   &trans     &kp BACKSPACE
-&trans  &kp Q   &kp W   &kp E             &kp R   &kp T   &trans  &none      &kp Y   &kp U   &kp I      &kp O    &kp P      &kp AT
+&trans  &kp Q   &kp W   &kp E             &kp R   &kp T   &trans  &trans     &kp Y   &kp U   &kp I      &kp O    &kp P      &kp AT
 &trans  &kp A   &kp S   &kp D             &kp F   &kp G   &none   &none      &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp COLON
 &trans  &kp Z   &kp X   &kp C             &kp V   &kp B   &none   &kp B      &kp N   &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp INT_RO
 &trans  &trans  &trans  &kp INT_MUHENKAN  &trans  &trans  &trans  &kp SPACE  &trans                              &mo 1      &none
