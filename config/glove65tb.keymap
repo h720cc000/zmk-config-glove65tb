@@ -76,11 +76,11 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC         &kp N1        &kp N2        &kp N3                  &kp N4       &kp N5                                            &kp N6            &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA    &kp DOT        &trans              &trans         &kp F             &kp W   &kp R   &kp Y   &kp P   &trans
-&mo 5           &kp E         &kp I         &kp A                   &kp O        &kp MINUS      &kp SLASH           &trans         &kp K             &kp T   &kp N   &kp S   &kp H   &kp RETURN
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &trans         &kp G             &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 5 SPACE  &lt 5 SPACE    &kp SPACE           &kp BACKSPACE  &lt 4 INT_HENKAN                          &mo 1   &kp DELETE
+&kp ESC         &kp N1        &kp N2        &kp N3                  &kp N4     &kp N5                                          &kp N6            &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA  &kp DOT        &trans            &trans         &kp F             &kp W   &kp R   &kp Y   &kp P   &trans
+&mo 5           &kp E         &kp I         &kp A                   &kp O      &kp MINUS      &kp SLASH         &trans         &kp K             &kp T   &kp N   &kp S   &kp H   &kp RETURN
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V      &kp SEMICOLON  &kp SINGLE_QUOTE  &trans         &kp G             &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &kp SPACE  &lt 5 SPACE    &kp RETURN        &kp BACKSPACE  &lt 4 INT_HENKAN                          &mo 1   &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp END HOME>;
@@ -135,11 +135,11 @@
         number_layer {
             label = "NUM";
             bindings = <
-&none  &none     &none     &none     &none      &none                      &none            &none            &none            &none            &none       &none
-&none  &none     &none     &none     &none      &none     &none     &none  &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none       &none
-&none  &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT  &none  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RETURN  &none
-&none  &none     &none     &none     &none      &none     &none     &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none       &none
-&none  &none     &none     &none     &kp SPACE  &none     &none     &none  &kp RETURN                                                          &none       &none
+&none  &none     &none     &none     &none     &none                              &none            &none            &none            &none            &none    &none
+&none  &none     &none     &none     &none     &none     &none     &none          &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &none
+&none  &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT  &none          &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &none
+&none  &none     &none     &none     &none     &none     &none     &none          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT  &none
+&none  &none     &none     &none     &trans    &none     &none     &kp BACKSPACE  &kp RETURN                                                          &none    &none
             >;
         };
 
