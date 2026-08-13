@@ -52,6 +52,11 @@
             bindings = <&mo 3>;
             key-positions = <49 50>;
         };
+
+        sum_Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <58 62>;
+        };
     };
 
     behaviors {
