@@ -465,3 +465,5 @@ layers:
 combos:
 - p: [49, 50]
   k: SCROLL
+- p: [58, 62]
+  k: ENTER
