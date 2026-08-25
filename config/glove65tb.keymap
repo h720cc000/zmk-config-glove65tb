@@ -52,11 +52,6 @@
             bindings = <&mo 3>;
             key-positions = <49 50>;
         };
-
-        sum_Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <58 62>;
-        };
     };
 
     behaviors {
@@ -73,6 +68,24 @@
 
             tap-ms = <20>;
         };
+
+        exclamation: exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCLAMATION";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        question: question {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION";
+            bindings = <&kp DOT>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -81,21 +94,21 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC         &kp N1        &kp N2        &kp N3                  &kp N4     &kp N5                                          &kp N6            &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA  &kp DOT        &trans            &trans         &kp F             &kp W   &kp R   &kp Y   &kp P   &trans
-&mo 5           &kp E         &kp I         &kp A                   &kp O      &kp MINUS      &kp SLASH         &trans         &kp K             &kp T   &kp N   &kp S   &kp H   &kp RETURN
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V      &kp SEMICOLON  &kp SINGLE_QUOTE  &trans         &kp G             &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &kp SPACE  &lt 5 SPACE    &kp RETURN        &kp BACKSPACE  &lt 4 INT_HENKAN                          &mo 1   &kp DELETE
+&kp ESC         &kp N1        &kp N2        &kp N3                  &kp N4     &kp N5                                       &kp N6            &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&kp TAB         &kp Q         &kp L         &kp U                   &kp COMMA  &kp DOT        &trans            &trans      &kp F             &kp W   &kp R   &kp Y   &kp P   &trans
+&mo 5           &kp E         &kp I         &kp A                   &kp O      &kp MINUS      &kp SLASH         &trans      &kp K             &kp T   &kp N   &kp S   &kp H   &trans
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V      &kp SEMICOLON  &kp SINGLE_QUOTE  &trans      &kp G             &kp D   &kp M   &kp J   &kp B   &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &kp SPACE  &lt 5 SPACE    &kp BACKSPACE     &kp RETURN  &lt 4 INT_HENKAN                          &mo 1   &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp END HOME>;
+            sensor-bindings = <&inc_dec_kp HOME END>;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &bt BT_CLR    &none     &tog 6  &none  &none  &none  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &kp KP_NUMLOCK
+&none  &none         &none         &none         &none         &bt BT_CLR    &none     &tog 6  &none  &none  &none  &none  &none  &kp CAPSLOCK
 &none  &none         &none         &none         &none         &none         &ind_con  &none   &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none         &none         &none         &ind_bat  &none   &none  &none  &none  &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none     &none   &none                       &none  &none
@@ -108,7 +121,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mo 3   &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mo 3      &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
         };
@@ -119,7 +132,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mo 3      &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
         };
@@ -127,11 +140,11 @@
         function_layer {
             label = "FUN";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                       &kp F6  &kp F7    &kp F8    &kp F9     &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans             &kp C_PLAY_PAUSE  &trans  &trans    &kp UP    &kp F11    &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP    &trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &trans            &trans  &trans    &trans    &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans            &trans                                 &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                          &kp F6  &kp F7    &kp F8    &kp F9     &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans             &kp C_PLAY_PAUSE  &trans  &trans    &kp UP    &kp F11    &kp F12  &trans
+&trans  &trans  &trans  &kp AT  &trans  &kp TILDE  &kp C_VOLUME_UP    &trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &kp C_VOLUME_DOWN  &trans            &trans  &trans    &trans    &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans            &trans                                 &trans   &trans
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -140,11 +153,11 @@
         number_layer {
             label = "NUM";
             bindings = <
-&none  &none     &none     &none     &none     &none                              &none            &none            &none            &none            &none    &none
-&none  &none     &none     &none     &none     &none     &none     &none          &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &none
-&none  &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT  &none          &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &none
-&none  &none     &none     &none     &none     &none     &none     &none          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT  &none
-&none  &none     &none     &none     &trans    &none     &none     &kp BACKSPACE  &kp RETURN                                                          &none    &none
+&none  &none     &none     &none          &none             &none                       &none            &none            &none            &none            &none    &none
+&none  &none     &none     &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &none
+&none  &kp LPAR  &kp RPAR  &kp LBRC       &kp RBRC          &kp LBKT  &kp RBKT  &none   &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &none
+&none  &none     &none     &none          &none             &none     &none     &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT  &none
+&none  &none     &none     &none          &trans            &trans    &trans    &trans  &trans                                                              &none    &none
             >;
         };
 
