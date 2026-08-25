@@ -51,7 +51,7 @@ layers:
   - {t: ▽, type: trans}
   - G
   - D
-  - M
+  - {t: M, h: SCROLL}
   - J
   - B
   - RIGHT SHIFT
@@ -237,7 +237,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
-  - {t: SCROLL, type: held}
+  - SCROLL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -249,7 +249,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - SCROLL
+  - {t: SCROLL, type: held}
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
