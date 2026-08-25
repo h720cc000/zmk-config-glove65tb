@@ -17,8 +17,8 @@ layers:
   - Q
   - L
   - U
-  - ','
-  - .
+  - {t: ',', s: '!'}
+  - {t: ., s: '?'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F
@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
