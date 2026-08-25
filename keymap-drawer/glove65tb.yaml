@@ -40,7 +40,7 @@ layers:
   - N
   - S
   - H
-  - RETURN
+  - {t: ▽, type: trans}
   - LEFT SHIFT
   - Z
   - X
@@ -61,8 +61,8 @@ layers:
   - {t: INT MUHENKAN, h: LCTRL}
   - SPACE
   - {t: SPACE, h: NUM}
-  - RETURN
   - BACKSPACE
+  - RETURN
   - {t: INT HENKAN, h: FUN}
   - SYM
   - DELETE
@@ -78,7 +78,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - KP NUMLOCK
   - ''
   - ''
   - ''
@@ -92,7 +92,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - CAPSLOCK
   - ''
   - ''
   - ''
@@ -179,11 +179,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SCROLL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - {t: ▽, type: trans}
+  - SCROLL
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -249,7 +249,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
-  - {t: ▽, type: trans}
+  - SCROLL
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,9 +294,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '@'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '~'
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -346,8 +346,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - <
+  - '>'
   - ''
   - ''
   - ''
@@ -390,10 +390,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - BACKSPACE
-  - RETURN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   qwerty:
@@ -465,5 +465,3 @@ layers:
 combos:
 - p: [49, 50]
   k: SCROLL
-- p: [58, 62]
-  k: ENTER
