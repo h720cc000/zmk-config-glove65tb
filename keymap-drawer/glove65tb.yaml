@@ -40,7 +40,7 @@ layers:
   - N
   - S
   - H
-  - {t: ▽, type: trans}
+  - RETURN
   - LEFT SHIFT
   - Z
   - X
@@ -61,8 +61,8 @@ layers:
   - {t: INT MUHENKAN, h: LCTRL}
   - SPACE
   - {t: SPACE, h: NUM}
-  - BACKSPACE
   - RETURN
+  - BACKSPACE
   - {t: INT HENKAN, h: FUN}
   - SYM
   - DELETE
@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
+  - Sft+INT RO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,9 +294,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '@'
+  - '['
   - {t: ▽, type: trans}
-  - '~'
+  - '='
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -358,19 +358,19 @@ layers:
   - ''
   - ''
   - {type: held}
+  - '*'
   - (
-  - )
-  - '{'
   - '}'
-  - '['
+  - '|'
   - ']'
+  - NUBS
   - ''
   - KP MINUS
   - KP 4
   - KP 5
   - KP 6
   - ''
-  - ''
+  - RETURN
   - ''
   - ''
   - ''
