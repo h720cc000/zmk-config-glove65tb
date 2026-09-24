@@ -60,7 +60,7 @@ layers:
   - LEFT ALT
   - {t: INT MUHENKAN, h: LCTRL}
   - SPACE
-  - {t: SPACE, h: NUM}
+  - NUM
   - RETURN
   - BACKSPACE
   - {t: INT HENKAN, h: FUN}
@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+INT RO
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -292,11 +292,11 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - INT YEN
   - {t: ▽, type: trans}
+  - '@'
   - {t: ▽, type: trans}
-  - '['
-  - {t: ▽, type: trans}
-  - '='
+  - '~'
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
