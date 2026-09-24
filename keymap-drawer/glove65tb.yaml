@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
+  - Sft+INT RO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,9 +294,9 @@ layers:
   - {t: ▽, type: trans}
   - INT YEN
   - {t: ▽, type: trans}
-  - '@'
+  - '['
   - {t: ▽, type: trans}
-  - '~'
+  - Sft+=
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
