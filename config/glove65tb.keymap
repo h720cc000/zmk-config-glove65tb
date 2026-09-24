@@ -120,7 +120,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mo 3      &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
@@ -131,7 +131,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 3   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mo 3      &mkp MB5   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans
             >;
@@ -153,11 +153,11 @@
         number_layer {
             label = "NUM";
             bindings = <
-&none  &none         &none     &none            &none             &none                       &none            &none            &none            &none            &none    &none
-&none  &none         &none     &kp LESS_THAN    &kp GREATER_THAN  &none     &none     &none   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &none
-&none  &kp ASTERISK  &kp LPAR  &kp RIGHT_BRACE  &kp PIPE          &kp RBKT  &kp NUBS  &none   &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &kp RETURN
-&none  &none         &none     &none            &none             &none     &none     &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT  &none
-&none  &none         &none     &none            &trans            &trans    &trans    &trans  &trans                                                              &none    &none
+&none  &none          &none             &none            &none     &none                   &none            &none            &none            &none            &none    &none
+&none  &none          &none             &kp RBKT         &kp NUBS  &none   &none   &none   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &none
+&none  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp PIPE  &none   &none   &none   &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &kp RETURN
+&none  &none          &none             &kp ASTRK        &kp LPAR  &none   &none   &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT  &none
+&none  &none          &none             &none            &trans    &trans  &trans  &trans  &trans                                                              &none    &none
             >;
         };
 
