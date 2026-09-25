@@ -299,11 +299,11 @@ layers:
   - Sft+=
   - VOLUME UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
