@@ -297,7 +297,7 @@ layers:
   - '['
   - {t: ▽, type: trans}
   - Sft+=
-  - VOLUME UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - LEFT
@@ -311,7 +311,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOLUME DOWN
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
